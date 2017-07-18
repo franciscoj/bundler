@@ -63,7 +63,7 @@ module Bundler
       Bundler::Fetcher.disable_endpoint = options["full-index"]
 
       if options["binstubs"]
-        Bundler::SharedHelpers.major_deprecation \
+        Bundler::SharedHelpers.major_deprecation 2,
           "The --binstubs option will be removed in favor of `bundle binstubs`"
       end
 
